@@ -18,4 +18,4 @@ namespace CSClass32
             this.outTime = DateTime.Now;
         }
     }
-}
+} 
