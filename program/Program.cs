@@ -70,7 +70,7 @@ namespace CSClass32
             students.Add(new Student() { name = "김하늘", grade = 2 });
             students.Add(new Student() { name = "김효리", grade = 1 });*/
 
-            List<Student> students = new List<Student>() {
+/*            List<Student> students = new List<Student>() {
             new Student() { name = "함기훈", grade = 1 },
             new Student() { name = "김미나", grade = 2 },
             new Student() { name = "김다흰", grade = 2 },
@@ -82,7 +82,7 @@ namespace CSClass32
             new Student() { name = "김찬희", grade = 3 },
             new Student() { name = "김하늘", grade = 2 },
             new Student() { name = "김효리", grade = 1 }
-        };
+        };*/
             /*
                         foreach (var item in students)
                         {
@@ -101,7 +101,7 @@ namespace CSClass32
                 }
             }*/
 
-            for(int i= students.Count -1; i>=0; i--)
+/*            for(int i= students.Count -1; i>=0; i--)
             {
                 if (students[i].grade > 2)
                 {
@@ -111,7 +111,10 @@ namespace CSClass32
             foreach (var item in students)
             {
                 Console.WriteLine(item);
-            }
+            }*/
+
+            Method method = new Method();
+            Console.WriteLine(method.Multi(52.1, 273));
         }
     }
 }
