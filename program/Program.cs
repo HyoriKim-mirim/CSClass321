@@ -114,7 +114,7 @@ namespace CSClass32
             }*/
 
             Method method = new Method();
-            Console.WriteLine(method.Multi(52.1, 273));
+            Console.WriteLine(method.Multi(52.1, 273)); 
         }
     }
 }
