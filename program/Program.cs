@@ -132,8 +132,15 @@ namespace CSClass32
             Console.WriteLine("box2의 면적은 :" + box1.Area());
 
             Box box = new Box(10, 10);
-            box.width = -10;
+            box.Width = -10;
             Console.WriteLine("box의 면적은 :" + box.Area());
+
+
+            Console.WriteLine(Fibonacci.Get(1));
+            Console.WriteLine(Fibonacci.Get(100 ));
+            Console.WriteLine(Fibonacci.Get(1000));
+            Console.WriteLine(Fibonacci.Get(10000));
+
         }
     }
 }
