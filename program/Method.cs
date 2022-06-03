@@ -4,6 +4,8 @@ namespace CSClass32
 {
     class Method
     {
+        int instanceVariable;
+
         public double Multi(double v1, int v2)
         {
             return v1 * v2;
@@ -39,6 +41,23 @@ namespace CSClass32
                 output *= i;
             }
             return output;
+        }
+
+        static public void some()
+        {
+            //Multiply(1, 10);
+        }
+
+        public int Abs(int input)
+        {
+            if(input < 0)
+            {
+                return -input;
+            }
+            else
+            {
+                return input;
+            }
         }
     }
 }

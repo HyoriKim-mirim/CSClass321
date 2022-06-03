@@ -8,6 +8,8 @@ namespace CSClass32
 {
     internal class Program
     {
+        private static int width;
+
         static void Main(string[] args)
         {
 /*            
@@ -117,6 +119,21 @@ namespace CSClass32
             Console.WriteLine(method.Multi(52.1, 273));
             Console.WriteLine(method.Sum(1, 100));
             Console.WriteLine(method.Multiply(1, 10));
+            Console.WriteLine(method.Abs(-100));
+            Console.WriteLine(method.Abs(100));
+            Console.WriteLine(method.Abs(100)); //Java는 가능 C#은 불가능
+
+            Box1 box1 = new Box1(10, 10);
+            box1.width = -10;
+            Console.WriteLine("box1의 면적은 :" + box1.Area());
+
+            Box2 box2 = new Box2(10, 10);
+            box2.setWidth(-10);
+            Console.WriteLine("box2의 면적은 :" + box1.Area());
+
+            Box box = new Box(10, 10);
+            box.width = -10;
+            Console.WriteLine("box의 면적은 :" + box.Area());
         }
     }
 }
