@@ -141,23 +141,20 @@ namespace CSClass32
             Console.WriteLine(Fibonacci.Get(1000));
             Console.WriteLine(Fibonacci.Get(10000));
 
-            List<Dog> Dogs = new List<Dog>() { new Dog(), new Dog()};
-            List<Cat> Cats = new List<Cat>() { new Cat(), new Cat() };
-
-            foreach(var item in Dogs)
+            //List<Dog> Dogs = new List<Dog>() { new Dog(), new Dog()};
+            // List<Cat> Cats = new List<Cat>() { new Cat(), new Cat() };
+            List<Animal> animals = new List<Animal>()
+           {
+               new Dog(), new Dog(), new Dog(),
+               new Cat(), new Cat(), new Cat()
+           };
+            foreach(var item in animals)
             {
                 item.Eat();
                 item.Sleep();
-                item.Bark();
+                ((Dog)item).Bark();
             }
 
-
-            foreach (var item in Cats)
-            {
-                item.Eat();
-                item.Sleep();
-                item.Bark();
-            }
         }
     }
 }
